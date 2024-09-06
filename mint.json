@@ -53,39 +53,16 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "No-code",
-        "key-features"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "No-code"
       ]
     }
+    
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/cheatlayer",
+    "github": "https://github.com/rohanarun/Open-Agent-Studio/",
+    "linkedin": "https://www.linkedin.com/company/mintsearch",
+    "facebook" :"https://www.facebook.com/groups/cheatlayer",
+    "reddit":"https://www.reddit.com/r/cheat_layer/"
   }
 }
