@@ -33,14 +33,14 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.cheatlayer.com"
+      "name": "Chrome Extension",
+      "icon": "chrome",
+      "url": "https://chromewebstore.google.com/detail/cheat-layer/oolmdenpaebkcokkccakmlmhcpnogalc?authuser=0&hl=en"
     },
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/cheatlayer"
+      "name": "Windows Open Agent Studio",
+      "icon": "windows",
+      "url": "https://storage.googleapis.com/cheatlayer/cheatlayer.zip"
     },
     {
       "name": "Blog",
