@@ -2,3 +2,22 @@
 title: 'Agents API'
 description: 'Trigger agents from other services using a simple JSON API that returns results'
 ---
+
+You can trigger scripts using webhooks for Cheat Cloud AND Cheat Layer!
+
+Open Agent Studio(Previously Cheat Layer Desktop) now supports webhooks!
+
+CURL example:
+curl -X POST https://cheatlayer.com/triggers/extension -H 'Content-Type: application/json' -d '{"start":"desktop", "name": "TikTok_Marketing_Agent_0", "data":"test","key":"YOUR_KEY", "user":"YOUR_EMAIL", "caption":"A social post advertising www.doublediamondai.com, an ai automation agency", "voiceover":"a voiceover of an advertisement for www.doublediamondai.com, an ai automation agency","prompt": "An image of diamonds and robots throwing them in the air",  "script":"script=TikTok_Marketing_Agent_0.cheat"}'
+
+Then when designing your agent, add brackets to use them as variables like this:
+
+
+
+You can test this yourself with our TikTok Marketing agent to learn how to build dynamic agents you can embed in any website: 
+
+Logo
+Cheat Layer | Cheat Codes TikTok marketing agent that generates and uploads videos using Dalle3 and Stable Video
+Please download the .cheat file into the Open Agent Studio Install folder to trigger webhooks in your desktop install locally directly. 
+
+This is especially useful with the new unlimited free Llama model, because you now build unlimited agent-powered services and embed them in any website. Stay tuned for our White Labels and AI Saas course to learn how to start from scratch and launc your own custom agents as a White Label Saas subscription. 
