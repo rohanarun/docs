@@ -31,7 +31,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:**  Place the cursor over a specific area within an application before clicking or typing.
 
-### 3. Click
+### 3. Magic Clicker
 
 **Icon:** 
 
@@ -141,34 +141,6 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 ### 9. Magic Scraper (Semantic Scrape)
 
 **Icon:** 
-
-**Description:** Extract data from websites or screenshots using natural language descriptions. Ideal for quick scraping without coding.
-
-**Input Parameters:**
-
-- **Semantic Description:** Describe the data you want,  as you would to another person (e.g., "product prices on this page", "links in the sidebar"). 
-- **Threshold:** Controls how strict the matching must be (0 to 1).  A higher value only captures elements that very closely match your description. 
-- **Mode:** 
-    - **First/All/Last:**  Scrapes the first, all, or the last matching elements. 
-    - **Loop Total Runs/Loop Node Runs:** Repeats the scrape based on a fixed loop or the number of times the node has executed. 
-- **Target:** Specify the types of web elements you're interested in: 
-    - `span`: Text inside `<span>` HTML tags.
-    -  `link text`: The visible text of links.
-    -  `link destination`:  The URL of links.
-    -  `article`: Content within `<article>` tags.
-    -  `div`:  Content inside `<div>` tags.
-    -  `Twitter posts`:  Targets text from Twitter post elements. 
-- **X, Y:** (Optional)  For screenshot scraping, use these to focus on a specific area of the screenshot. 
-- **Data:** Internal JSON node data.
-
-**Example Use Cases:**
-
--  **Extract pricing data from an e-commerce website:**  Use a description like "prices of all the laptops."
--  **Collect article titles from a news website:**  Use "article" as the "Target" and a description like "headlines of all articles."
-
-### 10. SemanticDescribe
-
-**Icon:** 
 **Description:**  Describes a targeted region of a screenshot using AI. This provides a way  to dynamically identify web elements, even if their visual presentation changes.
 
 **Input Parameters:**
@@ -180,19 +152,11 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:**  Accurately target a button that has a varying position or changes its appearance from time to time.
 
-### 11. OCR
+-  **Extract pricing data from an e-commerce website:**  Use a description like "prices of all the laptops."
+-  **Collect article titles from a news website:**  Use "article" as the "Target" and a description like "headlines of all articles."
 
-**Icon:** ![](https://cheatlayer.com/static/media/text-recognize.e5d1ea14.svg)
 
-**Description:**  Extracts text from images or screenshots using Optical Character Recognition. 
-
-**Input Parameters:**
-
-- **Bounding Box X1/Y1/X2/Y2:** Define a rectangular area (in pixels) on the image from which to extract the text (top left corner:  X1,Y1 ; bottom right corner: X2,Y2). 
-
-**Example Use Case:** Extract the invoice number from a scanned invoice image. 
-
-### 12. Print
+### 11. Print
 
 **Icon:**  ![](https://cheatlayer.com/static/media/printer.d42c85e3.svg)
 
@@ -204,7 +168,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:**   Ensure that data scraped from a website has been stored correctly in a global variable before using it in another action. 
 
-### 13. Scroll
+### 12. Scroll
 
 **Icon:** ![](https://cheatlayer.com/static/media/arrows-scroll-vertical.e77e4c20.svg)
 
@@ -216,7 +180,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:**  Scroll to the bottom of a long web page to reveal more content to be scraped.
 
-### 14. Send Data
+### 13. Send Data
 
 **Icon:** ![](https://cheatlayer.com/static/media/arrow-up-right-from-square.1693d318.svg)
 
@@ -233,7 +197,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 - **Add data to a Google Sheet:** Send the data to a special URL provided by Google Sheets.
 - **Trigger an action in another application:** Send data to a webhook configured to receive data and initiate a task. 
 
-### 15. If Else
+### 14. If Else
 
 **Icon:** ![](https://cheatlayer.com/static/media/code-branch.6c47396c.svg)
 
@@ -251,7 +215,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:** You're scraping a webpage. If the text "Out of Stock" is found, you might want to trigger one set of actions, and a different set if its "In Stock'.
 
-### 16. Generalized Agent
+### 15. Generalized Agent
 
 **Icon:** ![](https://cheatlayer.com/static/media/robot.c5110a8d.svg)
 
@@ -263,20 +227,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 **Example Use Case:**   You've downloaded a file. Use a Generalized Agent to automate the process of uploading it to your chosen cloud storage provider.
 
-### 17. Cheat Layer Extension
-
-**Icon:** 
-
-**Description:** Execute Javascript code directly within a web browser using the Cheat Layer extension. Excellent for front-end web automations.
-
-**Input Parameters:**
-
- - **code:** The Javascript code to run. 
- - **URL:** The webpage where this code should be executed. 
-
-**Example Use Case:** Automatically populate a web form with data without having to individually select each input field and type.
-
-### 18. Google Sheets
+### 16. Google Sheets
 
 **Icon:**  
 
@@ -294,7 +245,7 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 - Log scraped product data in a Google Sheet.
 - Read a list of URLs from a Google Sheet as input for further automation actions. 
 
-### 19. Email
+### 17. Email
 
 **Icon:** ![](https://cheatlayer.com/static/media/envelope.e39582a8.svg)
 
@@ -313,25 +264,8 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 
 Okay, here is the documentation for the remaining no-code actions.
 
-## Open Agent Studio: No-Code Action Library - Additional Actions
 
-### 20.  Riku.AI
-
-**Icon:** 
-
-**Description:**   Accesses Riku.AI's advanced AI features for content creation and generation. 
-
- **Input Parameters:**
-
--  **Account Holder:** Your Riku.AI account username. 
-- **API Key**: Your Riku.AI API Key. 
-- **Prompt ID:**  The specific Riku.AI prompt you want to use (available within your Riku.AI account).
-- **n:** The number of outputs to generate.
-- **Input 1 / Input 2 / Input 3 ...**:   Prompt inputs, depending on the Riku.AI prompt's requirements.
-
-**Example Use Case:**  Automate the generation of product descriptions or creative writing using Riku's AI capabilities. 
-
-### 21. Math
+### 18. Math
 
 **Icon:** ![](https://cheatlayer.com/static/media/calculator.56001a7c.svg)
 
@@ -345,7 +279,7 @@ Okay, here is the documentation for the remaining no-code actions.
 
 **Example Use Case:**  Calculate discounts on e-commerce prices by subtracting a percentage.  
 
-### 22. GetData
+### 19. GetData
 
 **Icon:** ![](https://cheatlayer.com/static/media/arrow-down-to-square.e6db1d76.svg)
 
@@ -361,7 +295,7 @@ Okay, here is the documentation for the remaining no-code actions.
 - **Get Data from a website:**  Fetch the HTML content of a webpage.
 - **Call an API:**  Get data from an API endpoint.
 
-### 23. Download
+### 20. Download
 
 **Icon:** ![](https://cheatlayer.com/static/media/download.62b3f24e.svg)
 
@@ -376,7 +310,7 @@ Okay, here is the documentation for the remaining no-code actions.
 
 **Example Use Case:** Automate the process of downloading a file from a remote server. 
 
-### 24. Screenshot
+### 21. Screenshot
 
 **Icon:** ![](https://cheatlayer.com/static/media/image.0152d78e.svg)
 
@@ -388,23 +322,8 @@ Okay, here is the documentation for the remaining no-code actions.
 
 **Example Use Case:** Document the state of your desktop during automation or capture images for visual analysis.
 
-### 25. Llama
 
-**Icon:** ![](https://cheatlayer.com/static/media/llama.08628078.svg) 
-
-**Description:**  Executes tasks using the Meta's Llama 2 language model.  
-
-**Input Parameters:** 
-
-- **Automation Input:** Select a global variable containing the input text or prompt for the Llama 2 model.
-- **Tracking Tag:** (Optional) If enabled, automatically adds a tracking tag to your output.
-
-**Example Use Cases:**
-
--  **Summarize Text:**  Have Llama 2 condense a long article into a short summary.
-- **Generate Code:**   Ask it to write code in a specific programming language. 
-
-### 26. Webcam
+### 22. Webcam
 
 **Icon:**  ![](https://cheatlayer.com/static/media/camera.75221914.svg) 
 
@@ -416,7 +335,7 @@ Okay, here is the documentation for the remaining no-code actions.
 
  **Example Use Case:** You could integrate webcam captures into a workflow that analyzes images for visual inspection tasks or for gathering visual data. 
 
-### 27. Stable Video  
+### 23. Stable Video  
 
 **Icon:** 
 
@@ -439,24 +358,8 @@ Okay, here is the documentation for the remaining no-code actions.
 - **Create animated product demos:**  Describe your product in action. 
 - **Generate short, conceptual videos:** Experiment with visual ideas or illustrate concepts for educational content. 
 
-### 28.  Stable Diffusion
 
-**Icon:**
-
-**Description:** Create stunning, photorealistic images from text prompts, powered by StabilityAI's Stable Diffusion (requires Replicate API integration).  
-
-**Input Parameters:**
-
-- **prompt:**  A detailed description of the image you want,  just as you would for an artist (e.g.,  "a hyperrealistic painting of a cat wearing sunglasses in a tropical paradise"). 
-- **Automation Input:** Lets you dynamically create prompts using the output of GPT-4 or other data in a global variable. 
-
-**Example Use Cases:**
-
-- Generate custom art for your projects. 
-- Visualize ideas from text descriptions. 
--  Create concept art for websites, games, or marketing materials. 
-
-### 29. GPT-4 
+### 24. GPT-4 
 
 **Icon:** 
 
@@ -476,7 +379,7 @@ Okay, here is the documentation for the remaining no-code actions.
 - **Code Writing:** GPT-4 can be used to generate code snippets or write entire programs.
 - **Chatbots:**  Build AI-powered chatbots that interact naturally with users.
 
-### 30. General (Project Atlas)
+### 25. General (Project Atlas)
 
 **Icon:** 
 
