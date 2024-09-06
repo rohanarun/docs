@@ -38,14 +38,14 @@
       "url": "https://chromewebstore.google.com/detail/cheat-layer/oolmdenpaebkcokkccakmlmhcpnogalc?authuser=0&hl=en"
     },
     {
-      "name": "Windows Open Agent Studio",
+      "name": "Open Agent Studio Windows",
       "icon": "windows",
       "url": "https://storage.googleapis.com/cheatlayer/cheatlayer.zip"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://www.reddit.com/r/cheat_layer/"
+      "name": "Open Agent Studio Mac",
+      "icon": "mac",
+      "url": "https://storage.googleapis.com/cheatlayer/open_agent_studio_mac.zip"
     }
   ],
   "navigation": [
