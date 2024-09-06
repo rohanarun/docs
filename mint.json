@@ -54,7 +54,9 @@
       "pages": [
         "introduction",
                 "key-features",
-        "No-code"
+        "No-code",
+                "Agents API"
+
       ]
     }
     
