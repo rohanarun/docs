@@ -8,8 +8,7 @@ You can trigger scripts using webhooks for Cheat Cloud AND Cheat Layer!
 Open Agent Studio(Previously Cheat Layer Desktop) now supports webhooks!
 
 CURL example:
-curl -X POST https://cheatlayer.com/triggers/extension -H 'Content-Type: application/json' -d '{"start":"desktop", "name": "TikTok_Marketing_Agent_0", "data":"test","key":"YOUR_KEY", "user":"YOUR_EMAIL", "caption":"A social post advertising www.doublediamondai.com, an ai automation agency", "voiceover":"a voiceover of an advertisement for www.doublediamondai.com, an ai automation agency","prompt": "An image of diamonds and robots throwing them in the air",  "script":"script=TikTok_Marketing_Agent_0.cheat"}'
-
+curl -X POST https://cheatlayer.com/triggers/extension -H 'Content-Type: application/json' -d `{"start":"desktop", "name": "TikTok_Marketing_Agent_0", "data":"test","key":"YOUR_KEY", "user":"YOUR_EMAIL", "caption":"A social post advertising www.doublediamondai.com, an ai automation agency", "voiceover":"a voiceover of an advertisement for www.doublediamondai.com, an ai automation agency","prompt": "An image of diamonds and robots throwing them in the air",  "script":"script=TikTok_Marketing_Agent_0.cheat"}`
 Then when designing your agent, add brackets to use them as variables like this:
 
 
