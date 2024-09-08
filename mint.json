@@ -46,6 +46,11 @@
       "name": "Open Agent Studio Mac",
       "icon": "apple",
       "url": "https://storage.googleapis.com/cheatlayer/open_agent_studio_mac.zip"
+    },
+     {
+      "name": "Blog",
+      "icon": "wordpress",
+      "url": "https://cheatlayer.blog"
     }
   ],
   "navigation": [
@@ -66,7 +71,5 @@
     "github": "https://github.com/rohanarun/Open-Agent-Studio/",
     "discord": "https://discord.gg/cheatlayer",
     "facebook" :"https://www.facebook.com/groups/cheatlayer",
-    "youtube":"https://www.youtube.com/cheatlayer",
-    "blog":"https://cheatlayer.blog/"
-  }
+    "youtube":"https://www.youtube.com/cheatlayer"  }
 }
