@@ -51,6 +51,11 @@
       "name": "Blog",
       "icon": "wordpress",
       "url": "https://cheatlayer.blog"
+    },
+     {
+      "name": "Reddit",
+      "icon": "reddit",
+      "url": "https://www.reddit.com/r/cheat_layer/"
     }
   ],
   "navigation": [
