@@ -75,35 +75,22 @@ This documentation details Open Agent Studio's no-code actions, designed to buil
 - **Data:** Node settings in JSON.
 
 We support the following keyboard keys if you enter them only into the string input:
-`
-                    if "Current Directory" in str(x["saved"]):
-                        pyautogui.write(resource_path(''), interval=0.05)
-                    if "resource_path" in str(x["key"]).lower():
-                        pyautogui.write(resource_path(''), interval=0.05)
-                    if "backspace" in str(x["key"]).lower():
-                        pyautogui.press('backspace')
-                    elif "space" in str(x["key"]).lower():
-                        pyautogui.write(" ", interval=0.05)
-                    elif "period" in str(x["key"]).lower():
-                        pyautogui.write(".", interval=0.05)
-                    elif "slash" in str(x["key"]).lower():
-                        pyautogui.write("/", interval=0.05)
-                    elif "return" in str(x["key"]).lower():
-                        pyautogui.press('enter')
-                    elif "shift" in str(x["key"]).lower():
-                        pyautogui.keyDown("shift")
-                        self.shift_down = True
-                    elif "ctrl" in str(x["key"]).lower():
-                        pyautogui.keyDown("ctrl")
-                        self.ctrl_down = True
-                    elif "alt" in str(x["key"]).lower():
-                        pyautogui.keyDown("alt")
-                        self.alt_down = True
-                    elif "tab" in str(x["key"]).lower():
-                        pyautogui.keyDown("tab")
-                    elif "enter" in str(x["key"]).lower():
-                        pyautogui.press('enter')
-`
+| Input String                      | Output Action       |
+|------------------------------------|---------------------|
+| "Current Directory" in saved       | Write resource path |
+| "resource_path" in key             | Write resource path |
+| "backspace" in key                 | Press backspace     |
+| "space" in key                     | Write space         |
+| "period" in key                    | Write period (.)    |
+| "slash" in key                     | Write slash (/)     |
+| "return" in key                    | Press enter         |
+| "shift" in key                     | Hold shift key      |
+| "ctrl" in key                      | Hold ctrl key       |
+| "alt" in key                       | Hold alt key        |
+| "tab" in key                       | Hold tab key        |
+| "enter" in key                     | Press enter         |
+
+
 **Example Use Cases:**
 
 -  Press Enter to submit a form:  Set "String" to "enter".
