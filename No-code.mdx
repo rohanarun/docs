@@ -409,3 +409,21 @@ Okay, here is the documentation for the remaining no-code actions.
 **Example Use Case:** "Create a Twitter post with a picture of a cat and the hashtag #cutecats." Project Atlas will attempt to launch Twitter (if not already open), compose the post, find an image of a cat (possibly using AI image generation), and publish the tweet.
 
 
+
+### 25. Recorder
+
+**Icon:** 
+
+**Description:**  Records audio and screenshots to process downstream using language models. Outputs a transcript of the recording using OpenAI Whisper. 
+
+**Input Parameters:**
+
+-  **Audio File:**  the file name to save the .wav (no extension necessary)
+
+
+-  **Time:**  The time in seconds to record the audio.
+
+-  **Screenshot File(optional):**  The file name to save a screenshot.
+
+
+**Example Use Case:** Build a fact-checker that loops constantly and allows verifying what people in a zoom or live meeting are saying. 
