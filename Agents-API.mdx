@@ -6,20 +6,14 @@ The Agents API now runs on every Open Agent Studio instance. An easy way to test
 ![Agents API](https://storage.googleapis.com/cheatlayer/agents_api.png)
 It even returns all the saved agent data during the automation, plus the verification testing loop steps we use to verify each action. 
 
-You can trigger scripts using webhooks for Cheat Cloud AND Cheat Layer!
+<h1>Key Concepts</h1>
 
-Open Agent Studio(Previously Cheat Layer Desktop) now supports webhooks!
-title: 'Agents API Documentation' description: 'Create and manage automated agents for complex tasks across various platforms and services'
-Overview
-The Agents API provides a powerful interface for creating and managing automated agents capable of performing complex tasks across various platforms and services. This document details the API's functionality, parameters, and usage examples.
+<b>Nodes:</b> Individual actions an agent can perform
+<b>Variables:</b>  Data that can be passed between nodes
+<b>Verification:</b>  Checking if a node's action was successful
+<b>Global Variables:</b>  Shared data accessible across all nodes
 
-Key Concepts
-Nodes: Individual actions an agent can perform
-Variables: Data that can be passed between nodes
-Verification: Checking if a node's action was successful
-Global Variables: Shared data accessible across all nodes
-API Endpoints
-POST /agents
+<h1>POST /agents</h1>
 Creates and runs a new agent based on the provided JSON configuration.
 
 Request Body
