@@ -3,8 +3,20 @@ title: 'Scheduler'
 description: 'Schedule agents in natural language, using dropdowns, through the agents API in cron, or automatically at the ideal times with the Core Agent Team.'
 ---
 
+<b>Scheduled Agents Table</b>
 
 ![Scheduler](https://storage.googleapis.com/cheatlayer/sched1.png)
 
+
+<b>Open Agent Cloud Scheduler</b>
+
 ![Scheduler](https://storage.googleapis.com/cheatlayer/sched2.png)
 
+
+<b>Agents API Scheduler</b>
+
+Schedules the agent to run at specified times.
+
+<ParamField body="cron" type="string"> Cron expression for scheduling </ParamField> 
+```
+json { "type": "schedule", "cron": "0 9 * * 1-5" } 
