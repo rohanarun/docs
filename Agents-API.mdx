@@ -190,16 +190,18 @@ Complete Example: Web Scraping and Data Processing Agent
 json { "key": "your_api_key", "json_output": [ { "type": "open tab", "target": "https://example.com/products" }, { "type": "delay", "time": 5 }, { "type": "semanticScrape", "target": "product listings", "data": "product_data" }, { "type": "gpt4", "prompt": "Analyze the product data and summarize the findings", "input": ["product_data"], "data": "analysis_result" }, { "type": "google_sheets_create", "URL": "sheet_url", "Sheet_Name": "sheet_name" }, { "type": "google_sheets_add_row", "URL": "sheet_url", "Sheet_Name": "sheet_name", "data": ["analysis_result"] }, { "type": "email", "to": "manager@company.com", "subject": "Product Analysis Report", "body": "Please find the latest product analysis attached.", "data": "analysis_result" } ], "goal": "Scrape product data, analyze it, save to Google Sheets, and email the results" } 
 ``` 
 Best Practices
-Use descriptive names for variables to make the workflow clear.
-Add appropriate delays between actions to allow for page loading.
-Handle errors gracefully by checking node verification results.
-Use GPT-4 nodes to add flexibility and intelligence to your agents.
-Leverage integrations like Google Sheets for data storage and sharing.
-When using the python node, ensure all necessary libraries are imported.
-For file operations in the add_data node, ensure file paths are correct and accessible.
-When scheduling agents with the schedule node, use correct cron syntax.
-For API calls, double-check URL, headers, and body parameters.
-Use the general node for complex actions that may require multiple steps.
+
+1) Use descriptive names for variables to make the workflow clear.
+2) Add appropriate delays between actions to allow for page loading.
+3) Handle errors gracefully by checking node verification results.
+4) Use GPT-4 nodes to add flexibility and intelligence to your agents.
+5) Leverage integrations like Google Sheets for data storage and sharing.
+6) When using the python node, ensure all necessary libraries are imported.
+7) For file operations in the add_data node, ensure file paths are correct and accessible.
+8) When scheduling agents with the schedule node, use correct cron syntax.
+9) For API calls, double-check URL, headers, and body parameters.
+10) Use the general node for complex actions that may require multiple steps.
+
 By following this documentation, you can create sophisticated automated agents capable of handling a wide range of tasks across multiple platforms and services. The Agents API provides a flexible and powerful framework for defining complex sequences of actions, data processing, and integrations.
 
 
