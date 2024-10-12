@@ -64,6 +64,8 @@
       "pages": [
         "introduction",
         "No-code",
+                        "Scheduler",
+
                 "Agents-API",
                      "Open-Agent-Cloud"
 
