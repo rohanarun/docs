@@ -154,6 +154,27 @@ We support the following keyboard keys if you enter them only into the string in
 - **Data Processing:** Clean and manipulate data scraped from a website (e.g., extract specific values, format text). 
 - **API Integration:**  Interact with external web services by making API calls and handling the results.
 
+Downloading a tikto video to repurpose it:
+
+```
+import yt_dlp
+
+def download_tiktok_video(url, save_path="tiktok_video.mp4"):
+    try:
+        ydl_opts = {
+            'format': 'best',
+            'outtmpl': save_path
+        }
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+        print(f"Video saved as {save_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+download_tiktok_video("https://www.tiktok.com/@ceozita/video/7283161117927476485?q=AI%20tools&t=1730749235715", "7283161117927476485" + ".mp4")
+
+```
 ### 9. Magic Scraper (Semantic Scrape)
 
 **Icon:** 
