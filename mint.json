@@ -36,17 +36,7 @@
       "name": "Chrome Extension",
       "icon": "chrome",
       "url": "https://chromewebstore.google.com/detail/cheat-layer/oolmdenpaebkcokkccakmlmhcpnogalc?authuser=0&hl=en"
-    },
-    {
-      "name": "Open Agent Studio Windows",
-      "icon": "windows",
-      "url": "https://storage.googleapis.com/cheatlayer/cheatlayer.zip"
-    },
-    {
-      "name": "Open Agent Studio Mac",
-      "icon": "apple",
-      "url": "https://storage.googleapis.com/cheatlayer/open_agent_studio_mac.zip"
-    },
+    }
      {
       "name": "Blog",
       "icon": "wordpress",
