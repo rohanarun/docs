@@ -1,10 +1,11 @@
 ---
-title: 'Open Agent Studio'
-description: 'Open Agent Studio: No-Code RPA Platform Documentation'
+title: "Open Agent Studio"
+description: "Open Agent Studio: No-Code RPA Platform Documentation"
 ---
-Open Agent Studio is the first cross platform desktop application built to enable Agentic Process Automation as an open-source alternative and replacement for UIpath and all other RPA tools today. 
 
-Download for Windows and Mac at https://openagent.studio.
+Open Agent Studio is the first cross platform desktop application built to enable Agentic Process Automation as an open-source alternative and replacement for UIpath and all other RPA tools today.
+
+Download for Windows and Mac at [https://openagent.studio.](https://openagent.studio.)
 
 ### Origin
 
@@ -18,101 +19,122 @@ Businesses today are threatening to fire employees and replace them with AI. We 
 
 In a future where the AI in your pocket can generate custom, secure, and free versions of all the most expensive business software, we believe there'll be a level playing field that removes the barrier to build these businesses. More small businesses will build competitive brands through personal relationships, better quality service, and network effects through unique data. We invite you to join us in building this future together faster.
 
-
-
 ## Agentic Process Automation
+
 ![Generalized Agents framework](https://storage.googleapis.com/cheatlayer/agent.png)
 ![image](https://github.com/user-attachments/assets/ff792176-c3cc-41df-bbaf-8728e7520540)
 
-
 ### Semantic Targets
-Semantic targets distils the underlying intent of a target to english, so they still work even if services completely change their designs. This enables building robust, future-proof, agents. 
 
-Semantic targets can be dynamic or robust based on how strict the language is. 
+Semantic targets distils the underlying intent of a target to english, so they still work even if services completely change their designs. This enables building robust, future-proof, agents.
+
+Semantic targets can be dynamic or robust based on how strict the language is.
 
 ### Semantic Triggers
+
 ![Semantic Triggers](https://storage.googleapis.com/cheatlayer/semtriggers.png)
 
 ### Reasoning Based Targets
-![Reasoning Based Targets](https://storage.googleapis.com/cheatlayer/reasoning.png)  
 
-Traditional RPA tools rely heavily on code selectors and computer vision to interact with websites. These selectors are brittle and break whenever the target website updates its design, requiring manual code adjustments. 
+![Reasoning Based Targets](https://storage.googleapis.com/cheatlayer/reasoning.png)
+
+Traditional RPA tools rely heavily on code selectors and computer vision to interact with websites. These selectors are brittle and break whenever the target website updates its design, requiring manual code adjustments.
 
 Open Agent Studio eliminates this issue by using Large Language Models (LLMs) to interpret **semantic targets**. This allows you to describe what you want to automate in simple English. For example, instead of writing complex code to click a specific button, you can tell Open Agent Studio to "click the button that says 'Submit'".
 
 This approach enables robust and adaptable automations that withstand website design changes, making your agents significantly more efficient and reliable.
 
-
 Open Agent Studio offers a comprehensive suite of features to empower anyone, regardless of their technical skills, to build powerful RPAs.
 
-<video
-  controls
-  className="w-full aspect-video"
-  src="https://storage.googleapis.com/cheatlayer/finsta.mp4"
-></video>
+<video controls className="w-full aspect-video" src="https://storage.googleapis.com/cheatlayer/finsta.mp4" />
+
+Installing Open Agent Studio locally, or on-premise, requires an enterprise license. Please contact [support@cheatlayer.com](mailto:support@cheatlayer.com) for details.&#x20;
 
 ### Windows Install Instructions
 
-1) Download and extract cheatlayer.zip
-2) Double click cheatlayer.exe to open and click "more info" and "run anyway" if it asks. 
-3) Enter your Cheat Layer API key you can find at the bottom of the billing page at cheatlayer.com/billing. 
+1. Download and extract cheatlayer.zip
+
+2. Double click cheatlayer.exe to open and click "more info" and "run anyway" if it asks.
+
+3. Enter your Cheat Layer API key you can find at the bottom of the billing page at cheatlayer.com/billing.
 
 ### Mac Install Instructions
 
-1) Under "Privacy and Security" in your settings, add "terminal" to "Accessability", "Screen Recording", and "Full Disk Access". 
-2) Double click the unzipped app--it will close. 
-3) Open Privacy and Security "General" tab and click "run anyway" next to Cheat Layer. 
+1. Under "Privacy and Security" in your settings, add "terminal" to "Accessability", "Screen Recording", and "Full Disk Access".
+
+2. Double click the unzipped app--it will close.
+
+3. Open Privacy and Security "General" tab and click "run anyway" next to Cheat Layer.
 
 ### Linux Install Instructions
 
-1) Download main.zip 
-2) Extract main.zip
-3) Set ENV variable CHEAT_KEY with your cheatlayer.com/billing API key .
-4) ./main to run
+1. Download main.zip
 
+2. Extract main.zip
 
+3. Set ENV variable CHEAT\_KEY with your cheatlayer.com/billing API key .
+
+4. ./main to run
 
 #### 1.1 Semantic Targeting
 
-- Define actions and targets using plain English commands.
-- Eliminate the need for complex code selectors.
-- **Examples**:
-    - "Click the button labeled 'Login'"
-    - "Extract the text from the table header" 
-    - "Enter `{{ my_variable }}` into the search field"
+* Define actions and targets using plain English commands.
+
+* Eliminate the need for complex code selectors.
+
+* **Examples**:
+
+  * "Click the button labeled 'Login'"
+
+  * "Extract the text from the table header"
+
+  * "Enter `{{ my_variable }}` into the search field"
 
 #### 1.2 Node-Based Visual Workflow
 
-- Build automations through an intuitive drag-and-drop interface.
-- Utilize various node types representing distinct actions like clicks, keypresses, data extraction, data processing, and web interactions.
-- Connect nodes to define the flow and logic of your automation.
+* Build automations through an intuitive drag-and-drop interface.
+
+* Utilize various node types representing distinct actions like clicks, keypresses, data extraction, data processing, and web interactions.
+
+* Connect nodes to define the flow and logic of your automation.
 
 #### 1.3 LLMs for Enhanced Understanding
 
-- Understand your semantic targets and translate them into specific actions.
-- Dynamically adapt to website changes.
-- Automate tasks on websites without building custom selectors for each element.
+* Understand your semantic targets and translate them into specific actions.
+
+* Dynamically adapt to website changes.
+
+* Automate tasks on websites without building custom selectors for each element.
 
 #### 1.4 Variables and Data Management
 
-- Define variables to store data and dynamically use it throughout your automation.
-- Manage data from various sources, including web scraping, files (PDF, Docx, CSV, Excel), and API calls.
+* Define variables to store data and dynamically use it throughout your automation.
+
+* Manage data from various sources, including web scraping, files (PDF, Docx, CSV, Excel), and API calls.
 
 #### 1.5 Scheduling and Triggers
 
-- Schedule your agents to run automatically at specific times or intervals using a visual cron scheduler.
-- Trigger agents based on:
-    - Scheduled events (specific times, intervals)
-    - Emails (specific content, sender)
-    - Webhooks (external triggers from other applications)
-    - SMS messages (specific content, sender)
-    - Phone calls (initiate automations based on voice prompts)
-    - Semantic Triggers (initiate automations based on specific screen states)
+* Schedule your agents to run automatically at specific times or intervals using a visual cron scheduler.
+
+* Trigger agents based on:
+
+  * Scheduled events (specific times, intervals)
+
+  * Emails (specific content, sender)
+
+  * Webhooks (external triggers from other applications)
+
+  * SMS messages (specific content, sender)
+
+  * Phone calls (initiate automations based on voice prompts)
+
+  * Semantic Triggers (initiate automations based on specific screen states)
 
 #### 1.6 Agent Sharing and Community
 
-- Upload your completed agents to the Cheat Layer community to share with others.
-- Access a library of pre-built agents for various tasks, saving you development time.
+* Upload your completed agents to the Cheat Layer community to share with others.
+
+* Access a library of pre-built agents for various tasks, saving you development time.
 
 ### Advanced Features
 
@@ -120,31 +142,47 @@ Open Agent Studio provides a number of advanced features for building sophistica
 
 #### 2.1 Looping
 
-- Implement looping mechanisms to iteratively execute actions on multiple targets. 
-- **Loop Total Runs**: Executes a section of the workflow a predetermined number of times.
-- **Loop Node Runs**: Executes a section of the workflow based on the number of times a specific node has executed. 
-    - Useful for processing lists of data, scraping multiple pages on a website, or sending out batch emails.
+* Implement looping mechanisms to iteratively execute actions on multiple targets.
+
+* **Loop Total Runs**: Executes a section of the workflow a predetermined number of times.
+
+* **Loop Node Runs**: Executes a section of the workflow based on the number of times a specific node has executed.
+
+  * Useful for processing lists of data, scraping multiple pages on a website, or sending out batch emails.
 
 #### 2.2 Conditional Logic
 
-- Use "If Else" nodes to create branching paths in your automation based on specific conditions.
-- Conditions can be based on:
-    - Variable values
-    - Comparisons (equals, greater than, less than)
-    - Regular expressions
-- This enables dynamic execution of actions based on data or website state changes.
+* Use "If Else" nodes to create branching paths in your automation based on specific conditions.
+
+* Conditions can be based on:
+
+  * Variable values
+
+  * Comparisons (equals, greater than, less than)
+
+  * Regular expressions
+
+* This enables dynamic execution of actions based on data or website state changes.
 
 #### 2.3 Python Integration
 
-- Embed custom Python code blocks within your automation using the "Python Code" node.
-- Access Open Agent Studio's API through the provided `thread_signals` object within your code to:
-    - Send notifications (`thread_signals.notifications.emit`)
-    - Trigger internal actions (`thread_signals.chat.emit`)
-    - Interact with global variables (`graph.global_variables`)
-- This allows you to:
-    - Implement complex logic not possible with pre-built nodes
-    - Integrate with external libraries and services
-    - Perform advanced data manipulations
+* Embed custom Python code blocks within your automation using the "Python Code" node.
+
+* Access Open Agent Studio's API through the provided `thread_signals` object within your code to:
+
+  * Send notifications (`thread_signals.notifications.emit`)
+
+  * Trigger internal actions (`thread_signals.chat.emit`)
+
+  * Interact with global variables (`graph.global_variables`)
+
+* This allows you to:
+
+  * Implement complex logic not possible with pre-built nodes
+
+  * Integrate with external libraries and services
+
+  * Perform advanced data manipulations
 
 #### 2.4 Web Scraping with "Magic Scraper"
 
@@ -152,34 +190,45 @@ Efficiently extract data from websites using various "Magic Scraper" configurati
 
 **Options**:
 
-- Target specific HTML elements (links, images, text)
-- Filter based on text content and attributes
-- Handle dynamic content
-- Use variables to dynamically define targets
+* Target specific HTML elements (links, images, text)
+
+* Filter based on text content and attributes
+
+* Handle dynamic content
+
+* Use variables to dynamically define targets
 
 **Extracted data can be**:
 
-- Stored in variables
-- Used for further processing within the automation
-- Exported to external services like Google Sheets
+* Stored in variables
+
+* Used for further processing within the automation
+
+* Exported to external services like Google Sheets
 
 #### 2.5 Semantic Element Detection
 
 Combine "SemanticDescribe" and "Click" nodes for robust element interaction.
 
-- "SemanticDescribe" captures a target based on your description, even if its visual appearance changes.
-- "Click" then uses the captured target for precise interaction.
-- This method improves automation resilience against website design updates.
+* "SemanticDescribe" captures a target based on your description, even if its visual appearance changes.
+
+* "Click" then uses the captured target for precise interaction.
+
+* This method improves automation resilience against website design updates.
 
 #### 2.6 Data Processing with GPT-4
 
 Leverage GPT-4's capabilities to:
 
-- Summarize large amounts of text
-- Analyze and extract insights from data
-- Translate languages
-- Generate text content
-- Build conversational agents
+* Summarize large amounts of text
+
+* Analyze and extract insights from data
+
+* Translate languages
+
+* Generate text content
+
+* Build conversational agents
 
 Use variables to pass data between nodes and GPT-4 prompts.
 
@@ -188,22 +237,31 @@ Use variables to pass data between nodes and GPT-4 prompts.
 Connect with external platforms and services through API calls using the "Send Data" and "Python Code" nodes.
 
 Automate processes involving:
-- Data Retrieval
-- Workflow Triggering
-- Real-time Data Exchange
+
+* Data Retrieval
+
+* Workflow Triggering
+
+* Real-time Data Exchange
 
 #### 2.8 Agent Management
 
 Easily manage your agents through the intuitive interface.
 
 **Features**:
-- Create, edit, and delete agents.
-- Save and open automation files (.cheat).
-- Version control for tracking changes.
-- Duplicate existing agents for quick customization.
+
+* Create, edit, and delete agents.
+
+* Save and open automation files (.cheat).
+
+* Version control for tracking changes.
+
+* Duplicate existing agents for quick customization.
 
 #### 2.9 Global Variables
 
-- Utilize global variables to store data and share it across different nodes within your automation.
-- Access variables through the dropdown menus in node properties.
-- Update variable values dynamically during automation execution.
+* Utilize global variables to store data and share it across different nodes within your automation.
+
+* Access variables through the dropdown menus in node properties.
+
+* Update variable values dynamically during automation execution.
